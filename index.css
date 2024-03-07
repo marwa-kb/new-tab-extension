@@ -1,0 +1,160 @@
+* {
+	box-sizing: border-box;
+}
+
+:not(:root):fullscreen::backdrop {
+	display: none;
+}
+
+body {
+	margin: 0;
+
+	background: no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	color: white;
+	font-family: 'Jost', sans-serif;
+
+	user-select: none;
+}
+
+main {
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 7em;
+}
+
+p,
+.time,
+#author {
+	padding: 0.5em;
+}
+
+div.top {
+	display: flex;
+	justify-content: space-between;
+}
+
+#weather {
+	width: 200px;
+	margin-top: 1em;
+	margin-right: 1em;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-self: flex-start;
+
+	color: whitesmoke;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 7px;
+	text-shadow: 0px 0px 10px black;
+}
+
+#weather-first {
+	display: flex;
+	margin-top: .4rem;
+	margin-bottom: 0;
+}
+
+#weather > img {
+	width: 70px;
+}
+
+p.weather-city {
+	margin: 0 1em 1.4em 1em;
+	padding: 0;
+
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+p.weather-temp {
+	margin: 0;
+	margin-left: -10px;
+
+	align-self: center;
+	font-size: 1.7rem;
+}
+
+.time-date {
+	width:500px;
+	margin: 0 auto auto;
+
+	text-align: center;
+	text-shadow: 0px 0px 10px black;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+#time {
+	margin: 0;
+	padding: 0.3em 0 0.2em;
+
+	font-weight: 500;
+	font-size: 6rem;
+	letter-spacing: 15px;
+}
+
+#date {
+	margin: 0 0 1.5em;
+	font-weight: 500;
+}
+
+#last-row {
+	display: flex;
+	flex-direction: row;
+}
+
+#input-container,
+#author {
+	padding: 0.5em;
+
+	font-size: 0.85rem;
+	color: whitesmoke;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 7px;
+}
+
+#input-container {
+	border: rgba(188, 188, 188, 0.5) 1px solid;
+	margin: 0 auto 1em 1em;
+}
+
+#input-container .fa-keyboard {
+	margin: 0 0.5em;
+	color: rgb(188, 188, 188);
+}
+
+#change-thm {
+	margin-left: 0.5em;
+
+	color: white;
+	background: none;
+	border: none;
+}
+
+#change-thm::placeholder {
+	color: rgb(188, 188, 188);
+	font-weight: 500;
+}
+
+#author {
+	margin: 0 1em 1em auto;
+	border: black 1px solid;
+}
+
+a {
+	text-decoration: none;
+}
+
+#author:hover {
+	color: rgb(249, 249, 187);
+}

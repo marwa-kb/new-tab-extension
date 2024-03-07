@@ -1,0 +1,18 @@
+{
+	"manifest_version": 4,
+	"name": "New Tab",
+	"version": "1.0.0",
+	"description": "Just for practicing async JS",
+	"action": {
+		"default_icon": "images/new.png"
+	},
+	"web_accessible_resources": [
+		{
+		  "resources": [ "images/default_bg.jpg" ],
+		  "matches": [ "https://web-accessible-resources-1.glitch.me/*" ]
+		}
+	  ],
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	}
+}
