@@ -11,7 +11,8 @@
 * The fullscreen mode can be toggled by pressing (f).
 * The extension gets the localisation of the user and then shows the corresponding weather thanks to the **OpenWeather API**.
 * It also shows the current time and date.  
-  
+
+-----------------------
 This is not my first JS project but it's the first one I actually use in my everyday life.
 This is also one of the first projects that made me learn how to interact with APIs.  
 
