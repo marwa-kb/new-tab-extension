@@ -7,6 +7,7 @@ const monthsEngShort = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "
 
 export default function getCurrentDate() {
 	const date = new Date();
-	const formatted = daysEng[date.getDay() - 1] + ", " + date.getDate() + " " + monthsEng[date.getMonth()];
+	const weekday = date.getDay() || 7;
+	const formatted = daysEng[weekday - 1] + ", " + date.getDate() + " " + monthsEng[date.getMonth()];
 	document.getElementById("date").textContent = formatted;
 }
