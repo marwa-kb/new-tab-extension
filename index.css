@@ -41,6 +41,46 @@ div.top {
 	justify-content: space-between;
 }
 
+.box {
+	color: whitesmoke;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 7px;
+}
+
+#pin {
+	width: 100px;
+	height: 100px;
+	margin: 1em 0 0 1em;
+}
+
+#thumbtack {
+	width: 25px;
+	height: 25px;
+	padding: 1em 1em .9em 1em;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	color: rgba(255, 255, 255, 0.4);
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+	
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity .2s ease-in-out;
+}
+
+#pin:hover #thumbtack {
+	opacity: 1;
+	transition: opacity .2s ease-in-out;
+}
+
+#pin #thumbtack.activated {
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+}
+
 #weather {
 	width: 200px;
 	margin-top: 1em;
@@ -53,9 +93,6 @@ div.top {
 	justify-content: flex-end;
 	align-self: flex-start;
 
-	color: whitesmoke;
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 7px;
 	text-shadow: 0px 0px 10px black;
 }
 
@@ -116,11 +153,7 @@ p.weather-temp {
 #input-container,
 #author {
 	padding: 0.5em;
-
 	font-size: 0.85rem;
-	color: whitesmoke;
-	background: rgba(0, 0, 0, 0.5);
-	border-radius: 7px;
 }
 
 #input-container {

@@ -11,10 +11,9 @@ getCurrentDate();
 setInterval(getCurrentDate, 1000 * 60 * 60);
 
 // background image
-getBackground();
 document.addEventListener("dblclick", getBackground);
 
-// fullscreen more (f) or reset background (r)
+// fullscreen mode (f) or reset background (r)
 const inputEl = document.getElementById("change-thm");
 document.addEventListener("keyup", (e) => {
 	if (document.activeElement === inputEl)

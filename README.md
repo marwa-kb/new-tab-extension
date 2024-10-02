@@ -11,7 +11,7 @@
 * The fullscreen mode can be toggled by pressing (f).
 * The extension gets the localisation of the user and then shows the corresponding weather thanks to the **OpenWeather API**.
 * It also shows the current time and date.
-* To do: implement possibility to keep one image and show only that one.  
+* To do: implement possibility to keep image (done ✅)  
 
 -----------------------
 This is not my first JS project but it's the first one I actually use in my everyday life.
